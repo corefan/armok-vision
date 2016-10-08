@@ -1450,6 +1450,7 @@ GameObject:
   - 108: {fileID: 692705303}
   - 114: {fileID: 692705306}
   - 114: {fileID: 692705307}
+  - 114: {fileID: 692705305}
   m_Layer: 0
   m_Name: Sun Light
   m_TagString: Untagged
@@ -1507,6 +1508,26 @@ Transform:
   - {fileID: 2121861297}
   m_Father: {fileID: 1415142926}
   m_RootOrder: 0
+--- !u!114 &692705305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692705302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0ce3079cdb6a646a75f65cec8e8714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_innerSpotPercent: 50
+  m_shadowResolution: 1024
+  m_shadowNearClipPlane: 1
+  m_shadowCastLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_directionalLightShadowRadius: 100
+  m_directionalLightShadowRange: 100
+  m_useOcclusionCullingForShadows: 1
 --- !u!114 &692705306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3041,6 +3062,7 @@ GameObject:
   - 114: {fileID: 1169102435}
   - 92: {fileID: 1169102444}
   - 81: {fileID: 1169102441}
+  - 114: {fileID: 1169102445}
   - 114: {fileID: 1169102439}
   m_Layer: 0
   m_Name: Main Camera
@@ -3155,7 +3177,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1169102434}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
   m_Name: 
@@ -3236,6 +3258,29 @@ Behaviour:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1169102434}
   m_Enabled: 1
+--- !u!114 &1169102445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169102434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c5acf727c4d5d43bc69e892a516630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_valveShadowTextureWidth: 4096
+  m_valveShadowTextureHeight: 4096
+  m_indirectLightmapsOnly: 0
+  m_adaptiveQualityEnabled: 1
+  m_adaptiveQualityDebugVis: 0
+  m_MSAALevel: 4
+  m_minRenderTargetScale: 0.8
+  m_maxRenderTargetScale: 1.4
+  m_maxRenderTargetDimension: 4096
+  m_cullLightsInSceneEditor: 0
+  m_cullLightsFromEditorCamera: 0
+  m_hideAllValveMaterials: 0
 --- !u!1 &1201785582
 GameObject:
   m_ObjectHideFlags: 0
